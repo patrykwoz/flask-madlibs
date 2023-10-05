@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Your Story Template{% endblock %}
+
+{% block content %}
+
+
+<h1>Create your own story</h1>
+<h2>Define the questions that the players must answer to create the story and the template text of the story</h2>
+<p>Use commas to separate words of your questions</p>
+<p>Then define your story followinng this format: Once upon a time in a {question1}, there lived a large {question2} {question3}. It loved to {question4} {question5}.</p>
+<p>The way you define your story will be used to create the game.</p>
+<form action="/">
+    <div class="input-container">
+        <label for="questions">Questions</label>
+        <input type="text" name="story-questions" id="questions">
+    </div>
+    <div class="input-container">
+        <label for="story-text">Text of your story template</label>
+        <textarea class="input-st-template" name="story-text" id="st-text"></textarea>
+    </div>
+    <div class="input-container">
+        <button>Create a Story</button>
+    </div>
+
+</form>
+
+{% endblock %}

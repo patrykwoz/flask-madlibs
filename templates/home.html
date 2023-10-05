@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}MADLIBS HOME{% endblock %}
+
+{% block content %}
+    <h1>Play Madlibs</h1>
+
+    <form action="/story" class="madlibs-form">
+
+        {% for prompt in story.prompts %}
+        
+        <div class="input-container">
+            <label for="input-{{prompt}}">{{prompt}}</label>
+            <input id="input-{{prompt}}" name="{{prompt}}" placeholder="enter {{prompt}}" required>
+        </div>
+        {% endfor %}
+
+        <div class="input-container">
+            <label for="input-st-template">story template</label>
+            <textarea class="input-st-template" name="st-template" readonly>{{story.template}}</textarea>
+        </div>
+
+        <div class="container"></div>
+            <button>Submit</button>
+        </div>
+    </form>
+
+
+    <!-- {% include "form.html" %} -->
+
+{% endblock %}

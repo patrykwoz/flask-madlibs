@@ -1,0 +1,66 @@
+*{
+    font-family: 'DM Mono';
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2{
+    margin-top: 0.75rem;
+}
+
+p{
+    font-size: smaller;
+    margin-top: 0.5rem;
+}
+form{
+    margin-top: 0.5rem;
+    width: 100%;
+
+}
+body{
+    background-color: pink;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.nav-bar{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: white;
+}
+
+.nav-bar a{
+    font-weight: bold;
+    text-decoration: none;
+    padding:1rem;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+
+}
+
+.input-st-template{
+    display: inline-block;
+    height: 20rem;
+    white-space: normal;
+    width: 100%
+
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
